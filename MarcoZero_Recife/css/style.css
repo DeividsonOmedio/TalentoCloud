@@ -1,0 +1,44 @@
+body,
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-image: linear-gradient(45deg, rgba(118, 201, 115, 0), rgb(73, 197, 114), rgb(64, 141, 89));
+
+}
+
+img {
+    border: solid white 15px;
+    transform: perspective(1000px) rotateX(-4.2deg) rotateY(5.85deg) scale3d(1, 1, 1);
+    cursor: url("../img/coracaocon.png"), auto;
+}
+
+img:hover {
+    will-change: transform;
+    transform: none;
+    transition: all 1s;
+    scale: 1.1;
+
+}
+
+p {
+    width: 60%;
+    margin-top: 2%;
+}
+
+footer {
+    font-family: cursive;
+    border-top: 5px double rgba(118, 201, 115);
+    width: 100%;
+    text-align: center;
+    padding: 1% 0;
+}
+
+a {
+    text-decoration: none;
+}
